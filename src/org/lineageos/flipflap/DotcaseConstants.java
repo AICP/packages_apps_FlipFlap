@@ -52,6 +52,7 @@ public class DotcaseConstants {
         INSTAGRAM,
         WHATSAPP,
         TAPATALK,
+        TELEGRAM,
         SIGNAL,
         LIBRENEWS,
         CONVERSATIONS,
@@ -90,6 +91,7 @@ public class DotcaseConstants {
         0xfff86901, // Tapatalk Orange
         0xff2090ea, // Signal Blue
         0xff259b24, // Conversations Green
+        0xff2aa1d4, // Telegram
     };
 
     static int getColorFromNumber(final int color) {
@@ -155,6 +157,7 @@ public class DotcaseConstants {
         notificationMap.put("com.quoord.tapatalkpro.activity", Notification.TAPATALK);
         notificationMap.put("com.whatsapp", Notification.WHATSAPP);
         notificationMap.put("com.google.android.apps.inbox", Notification.INBOX);
+        notificationMap.put("org.telegram.messenger", Notification.TELEGRAM);
         notificationMap.put("org.thoughtcrime.securesms", Notification.SIGNAL);
         notificationMap.put("app.librenews.io.librenews", Notification.LIBRENEWS);
         notificationMap.put("eu.siacs.conversations", Notification.CONVERSATIONS);
@@ -395,6 +398,16 @@ public class DotcaseConstants {
         { 0,  0,  0, 27, 27,  0,  0},
         { 0,  0,  0,  0,  0, 27,  0}};
 
+    static final int[][] telegramSprite = {
+        { 0, 28, 28, 28, 28, 28, 0},
+        {28, 28, 28, 28,  1, 1, 1},
+        {28, 28,  1,  1,  1, 1, 28},
+        { 1,  1,  1,  1,  1, 28, 28},
+        {28, 28,  1,  1,  1, 28, 28},
+        {28, 28, 28,  1, 28, 28, 28},
+        {28, 28, 28,  1, 28, 28, 28},
+        { 0, 28, 28, 28, 28, 28, 0}};
+
     static int[][] getNotificationSprite(Notification notification) {
         switch (notification) {
             case DOTS:
@@ -437,6 +450,8 @@ public class DotcaseConstants {
                 return whatsappSprite;
             case TAPATALK:
                 return tapatalkSprite;
+            case TELEGRAM:
+		return telegramSprite;
             case SIGNAL:
                 return signalSprite;
             case LIBRENEWS:
