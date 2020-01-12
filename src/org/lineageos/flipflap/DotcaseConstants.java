@@ -53,6 +53,7 @@ public class DotcaseConstants {
         WHATSAPP,
         TAPATALK,
         TELEGRAM,
+        THREEMA,
         SIGNAL,
         LIBRENEWS,
         CONVERSATIONS,
@@ -158,6 +159,7 @@ public class DotcaseConstants {
         notificationMap.put("com.whatsapp", Notification.WHATSAPP);
         notificationMap.put("com.google.android.apps.inbox", Notification.INBOX);
         notificationMap.put("org.telegram.messenger", Notification.TELEGRAM);
+        notificationMap.put("ch.threema.app", Notification.THREEMA);
         notificationMap.put("org.thoughtcrime.securesms", Notification.SIGNAL);
         notificationMap.put("app.librenews.io.librenews", Notification.LIBRENEWS);
         notificationMap.put("eu.siacs.conversations", Notification.CONVERSATIONS);
@@ -408,6 +410,16 @@ public class DotcaseConstants {
         {28, 28, 28,  1, 28, 28, 28},
         { 0, 28, 28, 28, 28, 28, 0}};
 
+    static final int[][] threemaSprite = {
+        { 0,  0,  0,  0,  0,  0,  0},
+        { 0,  0,  1,  1,  1,  0,  0},
+        { 0,  1,  1,  1,  1,  1,  0},
+        { 0,  1,  1,  1,  1,  1,  0},
+        { 0,  0,  1,  1,  1,  0,  0},
+        { 0,  1,  0,  0,  0,  0,  0},
+        { 0,  0,  3,  3,  3,  0,  0},
+        { 0,  0,  0,  0,  0,  0,  0}};
+
     static int[][] getNotificationSprite(Notification notification) {
         switch (notification) {
             case DOTS:
@@ -452,6 +464,8 @@ public class DotcaseConstants {
                 return tapatalkSprite;
             case TELEGRAM:
 		return telegramSprite;
+		    case THREEMA:
+		        return threemaSprite;
             case SIGNAL:
                 return signalSprite;
             case LIBRENEWS:
