@@ -19,23 +19,25 @@
 -->
 <resources>
     <string name="app_name">FlipFlap</string>
-    <string name="notification_title">Виявлено смарт чохол</string>
+    <string name="notification_title">Виявлено розумний чохол</string>
     <string name="alarm_label">БУДИЛЬНИК</string>
     <string name="abbrev_wday_month_day_no_year">EEE, d MMMM</string>
     <string name="answer_call">ВІДПОВІСТИ</string>
     <string name="ignore_call">ВІДХИЛИТИ</string>
     <string name="end_call">Завершити</string>
+    <string name="settings_name">Розумний чохол</string>
+    <string name="settings_summary">Налаштування поведінки аксесуара</string>
     <string name="category_behaviour">Поведінка</string>
     <string name="pass_to_security_view_title">Відразу пропонувати введення паролю</string>
     <string name="pass_to_security_view_summary">Відкриття чохла показує екран розблокування</string>
     <string name="category_design">Оформлення</string>
     <string name="switch_charging_status_title">Показати статус зарядки</string>
     <string name="switch_charging_status_summary">Змінювати колір в залежності від рівня заряду батареї</string>
-    <string name="category_timeouts">Затримка</string>
+    <string name="category_timeouts">Затримки</string>
     <string name="timeout_plugged_title">Під час зарядки</string>
     <string name="timeout_unplugged_title">Від\'єднано</string>
-    <string name="timeout_summary">Показувати додаток чохла для %s після закриття</string>
-    <string name="timeout_summary_never">Після закриття чохла, програму буде увімкнено</string>
+    <string name="timeout_summary">Показувати додаток чохла %s після закриття</string>
+    <string name="timeout_summary_never">Після закриття чохла, додаток чохла буде постійно увімкнено</string>
     <string name="timeout_summary_immediately">Під час закриття чохла екран буде вимкнено</string>
     <string name="timeout_entry_immediately">Негайно</string>
     <string name="timeout_entry_5s">5 секунд</string>
